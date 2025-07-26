@@ -13,6 +13,7 @@ public class DemoApp {
          ************
          */
 
+        // Using the custom Iterator interface:
         BreakfastMenu breakfastMenu = new BreakfastMenu();
         MenuIterator<String> it = breakfastMenu.createIterator();
 
@@ -23,6 +24,7 @@ public class DemoApp {
 
         System.out.println("------------------");
 
+        // Using the builts-in Iterable and Iterator interfaces:
         DinerMenu dinerMenu = new DinerMenu();
 
         for (String menuItem : dinerMenu)
