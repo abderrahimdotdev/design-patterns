@@ -6,14 +6,14 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 ## 📦 Patterns Included
 
 ### ✅ Creational
-- [Singleton](./src/dev/abderrahim/designpatterns/creational/singleton/)
+- [Singleton](./src/designpatterns/creational/singleton/)
 
 ### 🧱 Structural
-- [Decorator](./src/dev/abderrahim/designpatterns/structural/decorator/)
+- [Decorator](./src/designpatterns/structural/decorator/)
 
 ### 🔄 Behavioral
-- [Iterator](./src/dev/abderrahim/designpatterns/behavioral/iterator/)
-- [State](./src/dev/abderrahim/designpatterns/behavioral/state/)
+- [Iterator](./src/designpatterns/behavioral/iterator/)
+- [State](./src/designpatterns/behavioral/state/)
   
 
 ## 📁 Project Structure
@@ -21,9 +21,9 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 ```bash
 java-design-patterns/
 ├── src/
-│   ├── dev/abderrahim/designpatterns/creational/
-│   ├── dev/abderrahim/designpatterns/structural/
-│   └── dev/abderrahim/designpatterns/behavioral/
+│   ├── designpatterns/creational/
+│   ├── designpatterns/structural/
+│   └── designpatterns/behavioral/
 └── README.md
 ```
 
