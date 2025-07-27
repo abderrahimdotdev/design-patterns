@@ -9,6 +9,7 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 - [Singleton](./src/dev/abderrahim/designpatterns/creational/singleton/)
 
 ### 🧱 Structural
+- [Decorator](./src/dev/abderrahim/designpatterns/structural/decorator/)
 
 ### 🔄 Behavioral
 - [Iterator](./src/dev/abderrahim/designpatterns/behavioral/iterator/)
@@ -27,7 +28,8 @@ java-design-patterns/
 ```
 
 
-## Contributing
+## 🤝 Contributing
+
 Contributions are welcome! To contribute:
 1. Fork the repository.
 2. Create a new branch (`git switch -c feature/new-pattern`).
