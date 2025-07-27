@@ -1,5 +1,8 @@
 package dev.abderrahim.designpatterns.creational.singleton;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Demo {
     public static void main(String[] args) {
 
@@ -21,5 +24,14 @@ public class Demo {
         LazySingleton lazySingleton2 = LazySingleton.getInstance();
 
         System.out.println(lazySingleton == lazySingleton2); // OUTPUT: true
+
+        // Multi-threaded checking:
+        try (ExecutorService exe = Executors.newFixedThreadPool(4)) {
+            for (int i = 0; i < 4; i++)
+                exe.execute(() -> {
+                    System.out.println(Singleton.getInstance() == Singleton.getInstance()); // OUTPUT: true
+                    System.out.println(LazySingleton.getInstance() == LazySingleton.getInstance()); // OUTPUT: true
+                });
+        }
     }
 }
