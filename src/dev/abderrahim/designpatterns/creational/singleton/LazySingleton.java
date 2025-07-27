@@ -1,4 +1,4 @@
-package dev.abderrahim.designpatterns.singleton;
+package dev.abderrahim.designpatterns.creational.singleton;
 
 /**
  * A thread-safe Singleton pattern using lazy initialization with double-checked locking.

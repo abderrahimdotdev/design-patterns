@@ -1,4 +1,4 @@
-package dev.abderrahim.designpatterns.singleton;
+package dev.abderrahim.designpatterns.creational.singleton;
 
 /**
  * A lazy-loaded and thread-safe Singleton pattern that doesn't require

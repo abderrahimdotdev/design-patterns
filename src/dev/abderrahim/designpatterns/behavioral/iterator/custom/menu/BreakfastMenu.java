@@ -1,9 +1,9 @@
-package dev.abderrahim.designpatterns.iterator.custom.menu;
+package dev.abderrahim.designpatterns.behavioral.iterator.custom.menu;
 
 import java.util.Iterator;
 import java.util.List;
 
-import dev.abderrahim.designpatterns.iterator.custom.iterators.MenuIterator;
+import dev.abderrahim.designpatterns.behavioral.iterator.custom.iterators.MenuIterator;
 
 public class BreakfastMenu implements Menu<String> {
 

@@ -1,7 +1,7 @@
-package dev.abderrahim.designpatterns.state.context;
+package dev.abderrahim.designpatterns.behavioral.state.context;
 
-import dev.abderrahim.designpatterns.state.states.MusicPlayerOnState;
-import dev.abderrahim.designpatterns.state.states.MusicPlayerState;
+import dev.abderrahim.designpatterns.behavioral.state.states.MusicPlayerOnState;
+import dev.abderrahim.designpatterns.behavioral.state.states.MusicPlayerState;
 
 // Context: The main class that holds a reference to a State object.
 public class MusicPlayer {

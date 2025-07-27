@@ -1,6 +1,6 @@
-package dev.abderrahim.designpatterns.state.states;
+package dev.abderrahim.designpatterns.behavioral.state.states;
 
-import dev.abderrahim.designpatterns.state.context.MusicPlayer;
+import dev.abderrahim.designpatterns.behavioral.state.context.MusicPlayer;
 
 public class MusicPlayerOnState implements MusicPlayerState {
 

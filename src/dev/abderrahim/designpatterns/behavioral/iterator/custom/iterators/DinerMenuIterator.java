@@ -1,4 +1,4 @@
-package dev.abderrahim.designpatterns.iterator.custom.iterators;
+package dev.abderrahim.designpatterns.behavioral.iterator.custom.iterators;
 
 import java.util.NoSuchElementException;
 

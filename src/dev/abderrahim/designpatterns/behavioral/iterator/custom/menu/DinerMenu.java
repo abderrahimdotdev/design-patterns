@@ -1,7 +1,7 @@
-package dev.abderrahim.designpatterns.iterator.custom.menu;
+package dev.abderrahim.designpatterns.behavioral.iterator.custom.menu;
 
-import dev.abderrahim.designpatterns.iterator.custom.iterators.DinerMenuIterator;
-import dev.abderrahim.designpatterns.iterator.custom.iterators.MenuIterator;
+import dev.abderrahim.designpatterns.behavioral.iterator.custom.iterators.DinerMenuIterator;
+import dev.abderrahim.designpatterns.behavioral.iterator.custom.iterators.MenuIterator;
 
 public class DinerMenu implements Menu<String> {
 
