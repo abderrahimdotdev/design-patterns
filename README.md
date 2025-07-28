@@ -7,6 +7,7 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 
 ### ✅ Creational
 - [Singleton](./src/designpatterns/creational/singleton/)
+- [Factory](./src/designpatterns/creational/factory/)
 
 ### 🧱 Structural
 - [Decorator](./src/designpatterns/structural/decorator/)
