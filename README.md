@@ -19,7 +19,7 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 ## 📁 Project Structure
 
 ```bash
-java-design-patterns/
+design-patterns/
 ├── src/
 │   ├── designpatterns/creational/
 │   ├── designpatterns/structural/
