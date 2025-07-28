@@ -1,11 +1,10 @@
 package designpatterns.structural.decorator.example2;
 
-import java.nio.file.Path;
-
-import designpatterns.structural.decorator.example2.decorators.CompressionFileProcessorDecorator;
-import designpatterns.structural.decorator.example2.decorators.EncryptionFileProcessorDecorator;
-import designpatterns.structural.decorator.example2.fileprocessor.BasicFileProcessor;
-import designpatterns.structural.decorator.example2.fileprocessor.FileProcessor;
+import designpatterns.structural.decorator.example2.components.PlainText;
+import designpatterns.structural.decorator.example2.components.Text;
+import designpatterns.structural.decorator.example2.decorators.BoldDecorator;
+import designpatterns.structural.decorator.example2.decorators.EncryptionDecorator;
+import designpatterns.structural.decorator.example2.decorators.ItalicDecorator;
 
 public class Demo {
     public static void main(String[] args) {
@@ -21,20 +20,25 @@ public class Demo {
          * additional functionality.
          */
 
-        final Path filePath = Path.of("document.txt");
 
-        // Basic File Processor
+        // Create plain text
 
-        FileProcessor fileProcessor = new BasicFileProcessor();
-        fileProcessor.save(filePath);
+        Text text = new PlainText("Welcome to the Decorator Design Pattern.");
+        System.out.println(text.getContent()); // OUTPUT: Welcome to the Decorator Design Pattern.
 
-        // Add Compression
+        // Add bold formatting
 
-        fileProcessor = new CompressionFileProcessorDecorator(fileProcessor);
-        fileProcessor.save(filePath);
+        text = new BoldDecorator(text);
+        System.out.println(text.getContent()); // OUTPUT: <b>Welcome to the Decorator Design Pattern.</b>
 
-        // Add Encryption
-        fileProcessor = new EncryptionFileProcessorDecorator(fileProcessor);
-        fileProcessor.save(filePath);
+        // Add italic formatting
+
+        text = new ItalicDecorator(text);
+        System.out.println(text.getContent()); // OUTPUT: <i><b>Welcome to the Decorator Design Pattern.</b></i>
+
+        // Add text encryption
+
+        text = new EncryptionDecorator(text);
+        System.out.println(text.getContent()); // OUTPUT: >i/<>b/<.nrettaP ngiseD rotaroceD eht ot emocleW>b<>i<
     }
 }
