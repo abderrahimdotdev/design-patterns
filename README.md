@@ -14,8 +14,10 @@ A collection of classic **Design Pattern** implementations in **Java** with clea
 
 ### 🔄 Behavioral
 - [Iterator](./src/designpatterns/behavioral/iterator/)
+- [Observer](./src/designpatterns/behavioral/observer/)
 - [State](./src/designpatterns/behavioral/state/)
 - [Strategy](./src/designpatterns/behavioral/strategy/)
+
   
 
 ## 📁 Project Structure
