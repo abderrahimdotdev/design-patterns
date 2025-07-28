@@ -1,18 +1,20 @@
 package designpatterns.behavioral.iterator.builtin;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class DinerMenu implements Menu<String> {
 
-    String[] menuItems = {
-            "Vegetarian BLT",
-            "Seafood fried rice",
-            "Chicken Bacon Casserole",
-            "Hotdog",
-            "Steamed Veggies and Brown Rice",
-            "Pasta" };
+    private final String[] menuItems;
 
+    public DinerMenu(List<String> menuItems) {
+        this.menuItems = menuItems.toArray(String[]::new);
+    }
+
+    public DinerMenu(String[] menuItems) {
+        this.menuItems = menuItems.clone();
+    }
 
     @Override
     public Iterator<String> iterator() {
