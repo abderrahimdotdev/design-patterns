@@ -30,9 +30,14 @@ public class Demo {
         sqliteConn.connect();
         sqliteConn.disconnect();
 
+        // Create SQLite connection
+        DatabaseConnection oracleConn = DatabaseConnectionFactory.getConnection("oracle");
+        oracleConn.connect();
+        oracleConn.disconnect();
+
         // Handle unknown database types
         try {
-            DatabaseConnection unknownConn = DatabaseConnectionFactory.getConnection("oracle");
+            DatabaseConnection unknownConn = DatabaseConnectionFactory.getConnection("mongodb");
             unknownConn.connect();
             unknownConn.disconnect();
         } catch (IllegalArgumentException e) {

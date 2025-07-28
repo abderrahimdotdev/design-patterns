@@ -5,6 +5,7 @@ public class DatabaseConnectionFactory {
     private DatabaseConnectionFactory() {
     }
 
+    // Factory method to create database connections
     public static DatabaseConnection getConnection(String dbType) {
         if (dbType == null) {
             return null;
@@ -16,6 +17,8 @@ public class DatabaseConnectionFactory {
                 return new PostgreSQLConnection();
             case "sqlite":
                 return new SQLiteConnection();
+            case "oracle":
+                return new OracleDBConnection();
             default:
                 throw new IllegalArgumentException("Unknown database type: " + dbType);
         }
