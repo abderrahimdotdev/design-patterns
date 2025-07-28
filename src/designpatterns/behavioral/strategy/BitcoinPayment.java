@@ -10,6 +10,6 @@ public class BitcoinPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paying ₿" + amount + " with Bitcoin Wallet (" + walletAddress + ")");
+        System.out.println("Processing payment of ₿" + amount + " with Bitcoin Wallet (" + walletAddress + ")");
     }
 }

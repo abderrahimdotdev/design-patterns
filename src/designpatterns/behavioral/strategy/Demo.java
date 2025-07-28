@@ -19,10 +19,10 @@ public class Demo {
 
         paymentContext.setPaymentStrategy(new PayPalPayment("abc@example.com"));
 
-        paymentContext.executePayment(25); // OUTPUT: Paying 34 with PayPal(abc@example.com)
+        paymentContext.executePayment(25); // OUTPUT: Processing payment of 25 with PayPal(abc@example.com)
 
         paymentContext.setPaymentStrategy(new CreditCardPayment("1234"));
 
-        paymentContext.executePayment(19); // OUTPUT: Paying 19 with Credit Card nº1234
+        paymentContext.executePayment(19); // OUTPUT: Processing payment of 19 with Credit Card nº1234
     }
 }

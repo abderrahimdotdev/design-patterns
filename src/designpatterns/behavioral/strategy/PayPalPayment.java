@@ -10,6 +10,6 @@ public class PayPalPayment implements PaymentStrategy {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paying $" + amount + " with PayPal(" + email + ")");
+        System.out.println("Processing payment of $" + amount + " with PayPal(" + email + ")");
     }
 }
