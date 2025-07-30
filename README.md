@@ -36,7 +36,7 @@ design-patterns/
 
 Contributions are welcome! To contribute:
 1. Fork the repository.
-2. Create a new branch (`git switch -c feature/new-pattern`).
+2. Create a new branch (`git switch -c new-pattern`).
 3. Add your design pattern implementation or improve existing ones.
 4. Update the README with clear documentation.
 5. Submit a pull request.
